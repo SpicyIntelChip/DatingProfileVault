@@ -63,14 +63,22 @@
         .screenshot {
             flex-shrink: 0;
             width: 160px;
-            border-radius: 12px;
-            overflow: hidden;
-            box-shadow: 0 4px 16px rgba(0, 0, 0, 0.3);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
         }
         .screenshot img {
             width: 100%;
             height: auto;
             display: block;
+            border-radius: 12px;
+            box-shadow: 0 4px 16px rgba(0, 0, 0, 0.3);
+        }
+        .screenshot-caption {
+            margin-top: 10px;
+            font-size: 13px;
+            line-height: 1.3;
+            color: #a0a0a0;
         }
         .features {
             background: rgba(255, 255, 255, 0.05);
@@ -148,13 +156,16 @@
 
         <div class="screenshots">
             <div class="screenshot">
-                <img src="screenshots/screenshot1.png" alt="App Screenshot 1">
+                <img src="screenshots/screenshot1.png" alt="Welcome screen: write your dating profile once and use it on any app">
+                <span class="screenshot-caption">Write once, use on any app</span>
             </div>
             <div class="screenshot">
-                <img src="screenshots/screenshot2.png" alt="App Screenshot 2">
+                <img src="screenshots/screenshot2.png" alt="Profile screen with bio, interests, and prompts, each with one-tap copy for Tinder, Bumble, and Hinge">
+                <span class="screenshot-caption">Bio, interests &amp; prompts — copy in one tap</span>
             </div>
             <div class="screenshot">
-                <img src="screenshots/screenshot3.png" alt="App Screenshot 3">
+                <img src="screenshots/screenshot3.png" alt="AI rewrite sheet that refines your bio on-device with Apple Intelligence">
+                <span class="screenshot-caption">Rewrite with free on-device AI</span>
             </div>
         </div>
 
